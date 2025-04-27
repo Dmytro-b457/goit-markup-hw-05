@@ -393,3 +393,49 @@
     </footer>
   </body>
 </html>
+
+<div class="modal-overlay">
+  <div class="modal">
+    <svg class="modal-close" width="1" height="1">
+      <use href=""></use>
+    </svg>
+    <h2 class="modal-section">Leave your contacts and we will call you back</h2>
+    <form class="modal-form" action="">
+      <div class="modal-form-section">
+        <div class="modal-form-input">
+          <label for="name" class="modal-label">Name</label>
+          <svg class="" width="1" height="1">
+            <use href=""></use>
+          </svg>
+          <input type="text" id="name" name="name" class="modal-input" required />
+        </div>
+        <div class="modal-form-input">
+          <label for="tel" class="modal-label">Phone</label>
+          <svg class="" width="1" height="1">
+            <use href=""></use>
+          </svg>
+          <input type="number" id="tel" name="name" class="modal-input" required />
+        </div>
+        <div class="modal-form-input">
+          <label for="email" class="modal-label">Email</label>
+          <svg class="" width="1" height="1">
+            <use href=""></use>
+          </svg>
+          <input type="email" id="email" name="email" class="modal-input" required />
+        </div>
+        <div class="modal-form-input">
+          <label for="message" class="modal-label">Comment</label>
+          <textarea id="message" name="message" class="modal-textarea"></textarea>
+        </div>
+        <div class="modal-form-checkbox">
+          <label for="accept" class="modal-label">
+            I accept the terms and conditions of the
+            <a href="#">Privacy Policy</a>
+          </label>
+          <input type="checkbox" id="accept" name="accept" class="modal-checkbox" />
+        </div>
+        <button type="submit" class="modal-button">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
