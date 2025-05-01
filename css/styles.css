@@ -537,16 +537,16 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
-  pointer-events: none;
+  /* opacity: 1;
+  pointer-events: none; */
   transition: opacity 250ms ease-in-out;
 }
 .modal {
   background-color: #fcfcfc;
   border-radius: 4px;
   width: 408px;
-  height: 584px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .modal-btn-close {
@@ -558,9 +558,13 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 22px;
+  right: 25px;
 }
 
 .modal-close {
+  position: static;
 }
 
 .modal-section {
@@ -568,6 +572,9 @@ input {
   line-height: 1.5;
   text-align: center;
   color: #2e2f42;
+  margin: 72px 0 16px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-form {
@@ -616,15 +623,27 @@ input {
   border-radius: 4px;
   width: 360px;
   height: 120px;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-form-checkbox {
-}
 .modal-checkbox {
+  margin-top: 2px;
 }
-.modal-button {
+.modal-label a {
+  color: #4d5ae5;
+  text-decoration: underline;
 }
 
+.modal-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
 .modal-button {
   font-weight: 500;
   line-height: 1.5;
@@ -636,5 +655,4 @@ input {
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
-  margin-top: 24px;
 }
