@@ -544,7 +544,7 @@ input {
 .modal {
   background-color: #fcfcfc;
   border-radius: 4px;
-  width: 408px;
+  max-width: 408px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   position: relative;
 }
@@ -569,12 +569,14 @@ input {
 
 .modal-section {
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   text-align: center;
   color: #2e2f42;
   margin: 72px 0 16px 0;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px 25px 0px 25px;
 }
 
 .modal-form {
@@ -627,6 +629,8 @@ input {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  padding-left: 16px;
+  padding-top: 8px;
 }
 
 .modal-checkbox {
@@ -648,6 +652,7 @@ input {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  color: #fff;
   text-align: center;
   border-radius: 4px;
   padding: 16px 32px;
