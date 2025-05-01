@@ -608,13 +608,28 @@ input {
   left: 16px;
   transform: translateY(-50%);
   pointer-events: none;
+  fill: #2e2f42;
+}
+
+.modal-svg-form:hover .modal-svg,
+.modal-svg-form:active .modal-svg,
+.modal-svg-form:focus .modal-svg {
+  fill: #4d5ae5;
 }
 
 .modal-input {
-  border: 1px solid #4d5ae5;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  padding-left: 38px;
+}
+
+.modal-input:focus,
+.modal-input:active,
+.modal-input:hover {
+  border: 1px solid #4d5ae5;
+  outline: 1px solid #4d5ae5;
 }
 
 .modal-form-comment {
@@ -633,9 +648,17 @@ input {
   padding-top: 8px;
 }
 
+.modal-textarea:focus,
+.modal-textarea:active,
+.modal-textarea:hover {
+  border: 1px solid #4d5ae5;
+  outline: 1px solid #4d5ae5;
+}
+
 .modal-checkbox {
   margin-top: 2px;
 }
+
 .modal-label a {
   color: #4d5ae5;
   text-decoration: underline;
